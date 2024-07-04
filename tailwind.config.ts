@@ -9,12 +9,19 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'gradient-primary': 'linear-gradient(to bottom, #F4F9FF, #E0EDFB)',
+        'gradient-secondary': 'linear-gradient(to right, #70C3FF, #4B65FF)',
+        stars: 'url(/stars.svg)',
       },
     },
+    colors: {
+      green: '#27B274',
+      error: '#FF8080',
+      blue: '#6F91BC',
+      gray: '#404658',
+      white: '#ffffff'
+    }
   },
-  plugins: [],
+  plugins: [require('daisyui')],
 };
 export default config;
